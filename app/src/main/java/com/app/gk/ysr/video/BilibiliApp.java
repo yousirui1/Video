@@ -32,5 +32,6 @@ public class BilibiliApp extends Application{
 
     public static BilibiliApp getInstance(){
         return mInstance;
+
     }
 }

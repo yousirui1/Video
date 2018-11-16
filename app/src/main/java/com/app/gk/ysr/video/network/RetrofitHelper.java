@@ -28,13 +28,14 @@ public class RetrofitHelper {
         initOkHttpClient();
     }
 
+    /*
     public static LiveService getLiveAPI(){
         return createApi(LiveService.class, ApiCons);
     }
 
     public static BiliAppService getBiliAppAPI(){
         return createApi(BiliAppService.class, ApiCo);
-    }
+    }*/
 
     /*
      * 根据传入的baseUri, 和api创建retrofit
@@ -59,10 +60,10 @@ public class RetrofitHelper {
             synchronized (RetrofitHelper.class){
                 if(mOkHttpClient == null) {
                    //设置Http缓存
-                    Cache cache = new Cache(new File());
+                    /*Cache cache = new Cache(new File());
                     mOkHttpClient = new OkHttpClient().Builder()
                             .cache(cache)
-                            .add
+                            .add*/
                 }
             }
         }
